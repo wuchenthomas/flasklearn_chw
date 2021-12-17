@@ -1,0 +1,39 @@
+<form method="post" action="data">
+    <input type="file" id=csvfile1 name=csvfile1 accept=".csv">
+    <select name="Layer1">
+    <option value="TopLayer" SELECTED>TopLayer</option>"
+    <option value="Bottomlayer" >BottomLayer</option>"
+    </select>
+    <br>
+    <label for="skip_header_row1">Skip header: </label>
+    <input type="text" id='skip_header_row1' size='1' name="skip_header_row1" value="12">
+    <br>
+    <label for="Layer_Nr1">Column number of Layer: </label>
+    <input type="text" id="Layer_Nr1" name="Layer_Nr1"  size='1' value="2">
+    <br>
+    <label for="RFFE_Nr1">Column number of RFFE_Nr: </label>
+    <input type="text" id="RFFE_Nr1"  name="RFFE_Nr1"  size='1' value="8">
+    <br>
+    <input type="file" id="csvfile2" value="" accept=".csv">
+    <select name="Layer2">
+    <option value="TopLayer" SELECTED>TopLayer</option>"
+    <option value="BottomLayer" >BottomLayer</option>"
+    </select>
+    <br>
+    <label for="skip_header_row2">Skip header: </label>
+    <input type="text"  id='skip_header_row2' name="skip_header_row2"  size='1' value="12">
+    <br>
+    <label for="Layer_Nr2">Column number of Layer: </label>
+    <input type="text" id="Layer_Nr2" name="Layer_Nr2" value="2">
+    <br>
+    <label for="RFFE_Nr2">Column number of RFFE_Nr: </label>
+    <input type="text" id="RFFE_Nr2"  name="RFFE_Nr2" value="8" >
+    <br>
+        <input type=submit value="Submit">
+</form>
+
+
+
+<a href="{{url_for('data')}}" >data</a>
+
+

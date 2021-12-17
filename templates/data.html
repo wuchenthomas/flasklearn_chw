@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+{% for i in data %}
+        <tr>
+    {% for j in i %}
+
+<th>{{ j }}</th>
+    {% endfor %}
+{% endfor %}
+        </tr>
+    </table>
+</body>
+</html>
